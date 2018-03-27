@@ -1,0 +1,16 @@
+<button class="aaa" (click)="redirect()">redirect</button>
+<input id="iii" type="text" value="www"/>
+<input type="text" (keyup)="keyup($event)">
+{{name}}{{name2}}
+<h2 class="h2"></h2>
+<ul *ngFor="let item of list">
+    <li>{{item}}</li>
+</ul>
+<ul *ngFor="let item of list2;let i=index">
+    <li>{{i}}###{{item.username}}=={{item.age}}</li>
+</ul>
+<h2 class="h2"></h2>
+<input type="text" [(ngModel)]="inputValue">
+{{inputValue}}
+
+
