@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
+import { HelloService } from './service/hello.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { BodyComponent } from './body/body.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HelloService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

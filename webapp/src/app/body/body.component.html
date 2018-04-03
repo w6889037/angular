@@ -2,15 +2,24 @@
 <input id="iii" type="text" value="www"/>
 <input type="text" (keyup)="keyup($event)">
 {{name}}{{name2}}
-<h2 class="h2"></h2>
+<div [id] = "name" [class] = "name" [title] = "name2">绑定属性</div>
+<h2></h2>
+循环：
 <ul *ngFor="let item of list">
     <li>{{item}}</li>
 </ul>
 <ul *ngFor="let item of list2;let i=index">
     <li>{{i}}###{{item.username}}=={{item.age}}</li>
 </ul>
-<h2 class="h2"></h2>
-<input type="text" [(ngModel)]="inputValue">
+if判断：
+<div *ngIf="name2.match('www')">11111</div>
+<h2></h2>
+双向数据绑定：<input type="text" [(ngModel)]="inputValue">
 {{inputValue}}
+<h2></h2>
+<div [innerHTML]="html"></div>
+<h2></h2>
+<button (click) = "callService()">helloService</button>
+
 
 
